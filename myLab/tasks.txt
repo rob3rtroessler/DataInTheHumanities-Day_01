@@ -1,0 +1,63 @@
+---------- GETTING STARTED ---------
+download WebStorm
+download the repo named DataInTheHumanities_lab_1
+unzip DataInTheHumanities_lab_1.rar
+open with WebStorm as project
+
+-- ALTERNATIVE --
+Advanced, for students with prior knowledge re github:
+download WebStorm
+fork github repo DataInTheHumanities_lab_1
+clone repo locally
+open with WebStorm as project
+
+
+---------- CHAPTER #1 - HTML & CSS ---------
+task #1 - create three html files and link them
+
+task #2 - style one of your html files with css (heading, button, background)
+
+task #3 - build a grid for your index.html file using bootstrap (container, row, col)
+          your page should, ultimately, have:
+          - a background image
+          - a main container covering the entire page with some whitespace left and right
+          - a header with links to the other two pages
+          - three div containers with unique ids!
+                - div container one with the text 'all galleries'
+                - div container two with the text 'all items in gallery'
+                - div container three with the text 'selected item'
+
+task #4 - implement a bootstrap navbar
+
+task #5 - piece everything together and add a table with three rows to the first container
+
+
+
+---------- JS ---------
+the reason why we do js only now and why we were doing so much html, css, and bootstrap was so that you get a good understanding of what the DOM is.
+
+task #6 - topic: console.log
+          create main.js file and embed it into index.html
+          in main.js console.log('test')
+          open the website in chrome and open the developer tools (ctrl shift j in windows, ctrl option j on mac)
+
+task #7 - topic: js functions
+          write the console log into a function and call that function
+
+task #8 - topic: event listener
+          create a button in the 'all galleries' div
+          add an event listener to the button that fires the function on click
+
+task #9 - topic: selectors
+          in the function, instead of just logging a message, grab a div container and hide it.
+
+task #10 - create all three buttons with proper functionality of hiding and showing.
+           the hierarchy of the structure is as follows:
+           #1 all galleries, #2 selected gallery, #3 selected item
+           ultimately, you will have three different buttons for three different functionalities, i.e. 'show all items of this gallery', 'show item', and a 'back' button on the lowest and the second lvl;
+
+task #11 - forEach loops
+
+task #12 - getting the Harvard Museum API and using it
+           write a fetch request and check out the data structure
+

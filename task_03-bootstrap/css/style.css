@@ -1,0 +1,44 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-size: 100%;
+}
+
+#myParagraph{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border: thin solid red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.paragraph {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border: thin solid red;
+    padding: 5px;
+    border-radius: 5px;
+
+    background: #f08080;
+}
+
+.container {
+    background: lightcoral;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 5vh;
+    text-align: center;
+}
+
+.button {
+    background: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    border: thin solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: grey;
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>bootstrap grid</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- WRAPPER -->
+<div class="container-fluid" style="height: 100vh; padding-top: 1vh;">
+    <div class="row">
+        <div class="col-10 offset-1" style="border: thin solid grey; border-radius: 5px;">
+
+            <!-- HEADER -->
+            <div class="row" style="height: 10vh; background: #bdbdbd; border-bottom: thin solid grey">
+                <nav class="navbar navbar-light navbar-expand" style="background-color: transparent; width: 100%">
+                    <div class="collapse navbar-collapse">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="#">Search</a>
+                            <a class="nav-item nav-link" href="#">Favorites</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- CONTENT #1 -->
+            <div class="row" style="height: 20vh; background: #bdbdbd">
+                <div class="col-1" style="background: lightcoral">col-1</div>
+                <div class="col-2" style="background: lightblue">col-2</div>
+                <div class="col-3" style="background: lightcyan">col-3</div>
+                <div class="col-4" style="background: lightcoral">col-4</div>
+                <div class="col-2" style="background: lightcyan">
+                    <div class="row justify-content-center" style="height: 100%">
+                        <p class="align-self-center">col-2</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENT #2 -->
+            <div class="row justify-content-center" style="height: 30vh; background: lightsalmon">
+                <div class="align-self-center">
+                    <button type="button" class="btn btn-secondary">button</button>
+                </div>
+            </div>
+
+            <!-- CONTENT #3 -->
+            <div class="row justify-content-center" style="height: 30vh; background: lightcoral">
+                <div class="align-self-center" style="padding: 5vh">
+                    <p style="background: rgba(255,255,224,0.43); border-radius: 5px; padding: 5px; border: 3px solid lightsalmon">
+                        Mauris mi nisl, accumsan sed rutrum at, tincidunt eu leo. Suspendisse potenti. Nam dictum volutpat
+                        arcu non bibendum. Curabitur bibendum suscipit urna, at dapibus elit hendrerit at. Aenean vitae neque
+                        id ex hendrerit lacinia. Mauris pellentesque augue nec felis consectetur cursus et vitae nisl. Vivamus
+                        sodales enim eu velit ultricies, ut lobortis nisi consequat. Suspendisse elementum risus massa, a congue
+                        tellus posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu
+                        ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

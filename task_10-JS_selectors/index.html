@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>bootstrap grid</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- WRAPPER -->
+<div class="container-fluid" style="height: 100vh; padding-top: 1vh;">
+    <div class="row">
+        <div class="col-10 offset-1" style="border: thin solid grey; border-radius: 5px;">
+
+            <!-- HEADER -->
+            <div class="row" style="height: 10vh; background: #bdbdbd; border-bottom: thin solid grey">
+                <nav class="navbar navbar-light navbar-expand" style="background-color: transparent; width: 100%">
+                    <div class="collapse navbar-collapse">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="#">Search</a>
+                            <a class="nav-item nav-link" href="#">Favorites</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- CONTENT #1 -->
+            <div id="allGalleries" class="row" style="height: 20vh; background: lightsalmon">
+                <div class="col-12">
+                    <div class="row justify-content-center" style="height: 5vh">
+                        <p class="align-self-center">One</p>
+                    </div>
+                    <div class="row justify-content-center" style="height: 15vh;">
+                        <div class="align-self-center">
+                            <button type="button" class="btn btn-secondary" onclick="showGallery()">show selected Gallery</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENT #2 -->
+            <div id="selectedGallery"  class="row" style="height: 20vh; background: lightcyan">
+                <div class="col-12">
+                    <div class="row justify-content-center" style="height: 5vh">
+                        <p class="align-self-center">Selected Gallery</p>
+                    </div>
+                    <div class="row justify-content-center" style="height: 15vh;">
+                        <div class="align-self-center">
+                            <button type="button" class="btn btn-secondary" onclick="showItem()">show particular item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENT #3 -->
+            <div id="selectedItem" class="row" style="height: 20vh; background: lightcoral">
+                <div class="col-12">
+                    <div class="row justify-content-center" style="height: 5vh">
+                        <p class="align-self-center">Particular Item</p>
+                    </div>
+                    <div class="row justify-content-center" style="height: 15vh;">
+                        <div class="align-self-center">
+                            <button type="button" class="btn btn-secondary" onclick="showAllGalleries()">go back to initial selection</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script src="js/main.js"></script>
+
+</body>
+</html>

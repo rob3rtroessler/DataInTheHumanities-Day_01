@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Lab#2 Staff Solution</title>
+
+    <!-- CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="css/datatables.min.css" rel="stylesheet">
+
+    <!-- custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- BOOTSTRAP GRID - OUTSIDE WRAPPER -->
+<div class="container-fluid maxHeight">
+    <div class="row maxHeight" style="padding-top: 5px">
+
+        <!-- CONTENT - INNER WRAPPER -->
+        <div class="col-10 offset-1" id="content">
+
+            <!-- NAVBAR -->
+            <div class="row">
+                <nav class="mb-1 navbar navbar-expand-lg" id="myNavbar">
+                    <div class="collapse navbar-collapse">
+
+                        <!-- nav left side -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item borderRight active">
+                                <a class="nav-link" href="index.html">home</a>
+                            </li>
+                            <li class="nav-item borderRight">
+                                <a class="nav-link" href="favorites.html">favorites</a>
+                            </li>
+                            <li class="nav-item borderRight">
+                                <a class="nav-link" href="search.html">search</a>
+                            </li>
+                        </ul>
+
+                        <!-- nav right side -->
+                        <ul class="navbar-nav ml-auto nav-flex-icons">
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light" onclick="clearStorage()">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light">
+                                    <span id="favoriteCount">0</span>
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- header -->
+            <div class="row">
+                <h1 class="title">Harvard Art Museums</h1>
+            </div>
+
+
+            <div class="row">
+                <h2 class="title">Favorites</h2>
+            </div>
+            <div class="row">
+                <div class="col-8 offset-2" id="fav-container">
+                    <table id="dtBasicExampleThree" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                        <thead>
+                        <tr>
+                            <th class="th-sm">title
+                            </th>
+                            <th class="th-sm">artist
+                            </th>
+
+                            <th class="th-sm">id
+                            </th>
+                            <th class="th-sm">image
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody id="fav-table">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/libs/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/libs/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/libs/mdb.min.js"></script>
+
+<script type="text/javascript" src="js/libs/datatables.min.js"></script>
+<script type="text/javascript" src="js/libs/datatables-select.min.js"></script>
+
+<!-- own scripts -->
+<script src="js/helpers.js"></script>
+<script src="js/favorites.js"></script>
+
+</body>
+</html>

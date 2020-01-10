@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Lab#2 Staff Solution</title>
+
+  <!-- CSS -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- DataTables CSS -->
+  <link href="css/datatables.min.css" rel="stylesheet">
+
+  <!-- custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<!-- BOOTSTRAP GRID - OUTSIDE WRAPPER -->
+<div class="container-fluid maxHeight">
+  <div class="row maxHeight" style="padding-top: 5px">
+
+    <!-- CONTENT - INNER WRAPPER -->
+    <div class="col-10 offset-1" id="content">
+
+      <!-- NAVBAR -->
+      <div class="row">
+        <nav class="mb-1 navbar navbar-expand-lg" id="myNavbar">
+          <div class="collapse navbar-collapse">
+
+            <!-- nav left side -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item borderRight active">
+                <a class="nav-link" href="index.html">home</a>
+              </li>
+              <li class="nav-item borderRight">
+                <a class="nav-link" href="favorites.html">favorites</a>
+              </li>
+              <li class="nav-item borderRight">
+                <a class="nav-link" href="search.html">search</a>
+              </li>
+            </ul>
+
+            <!-- nav right side -->
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+              <li class="nav-item" onclick="backToGallery()" id="backToGallery" style="display: none">
+                <a class="nav-link waves-effect waves-light">
+                  <i class="fas fa-angle-left"></i>
+                </a>
+              </li>
+              <li class="nav-item" onclick="addToFavs()" id="addToFav" style="display: none">
+                <a class="nav-link waves-effect waves-light">
+                  <i class="far fa-star"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light">
+                  <span id="favoriteCount">0</span>
+                  <i class="fas fa-star"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- HEADER -->
+      <div class="row">
+        <h1 class="title">Harvard Art Museums</h1>
+      </div>
+
+      <!-- content #1 - all galleries -->
+      <div class="row" id="all-galleries">
+        <!-- container for all galleries -->
+        <div class="col-12" >
+
+          <!-- heading all-galleries -->
+          <div class="row"><h2 class="title">Galleries</h2></div>
+
+          <!-- data table initialization | populated via js -->
+          <table id="dtAllGalleries" class="table table-striped table-bordered table-sm">
+            <thead>
+            <tr>
+              <th class="th-sm">Gallery Name
+              </th>
+              <th class="th-sm">ID
+              </th>
+              <th class="th-sm">Count
+              </th>
+            </tr>
+            </thead>
+            <tbody id="all-galleries-table">
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- content #2 - all objects in selected gallery -->
+      <div class="row" id="all-objects" style="display:none">
+        <div class="col-12" id="objects">
+          <div class="row"><h2 class="title">Objects</h2></div>
+
+          <!-- data table initialization | populated via js -->
+          <table id="dtSelectedGalleryObjects" class="table table-striped table-bordered table-sm">
+            <thead>
+            <tr>
+              <th class="th-sm">title
+              </th>
+              <th class="th-sm">id
+              </th>
+              <th class="th-sm">image
+              </th>
+            </tr>
+            </thead>
+            <tbody id="all-objects-table">
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- content #3 - selected object -->
+      <div class="row" id="object" style="display: none">
+        <div class="col-12">
+          <div class="row">
+            <h2 id="objectTitle" style="width: 100%; text-align: center">Object</h2>
+          </div>
+          <div class="row">
+            <div class="col-8 offset-2">
+              <img id='objectImage' src="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8 offset-2">
+              <h3 id='objectArtist' style="width: 100%; text-align: center"></h3>
+            </div>
+          </div>
+          <div id="object-inner"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/libs/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/libs/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/libs/mdb.min.js"></script>
+<!-- datatables -->
+<script type="text/javascript" src="js/libs/datatables.min.js"></script>
+<script type="text/javascript" src="js/libs/datatables-select.min.js"></script>
+
+<!-- own scripts -->
+<script src="js/index.js"></script>
+<script src="js/helpers.js"></script>
+
+</body>
+</html>

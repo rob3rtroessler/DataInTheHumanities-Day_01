@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Lab#2 Staff Solution</title>
+
+    <!-- CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="css/datatables.min.css" rel="stylesheet">
+
+    <!-- custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<!-- BOOTSTRAP GRID - OUTSIDE WRAPPER -->
+<div class="container-fluid maxHeight">
+    <div class="row maxHeight" style="padding-top: 5px">
+
+        <!-- CONTENT - INNER WRAPPER -->
+        <div class="col-10 offset-1" id="content">
+
+            <!-- NAVBAR -->
+            <div class="row">
+                <nav class="mb-1 navbar navbar-expand-lg" id="myNavbar">
+                    <div class="collapse navbar-collapse">
+
+                        <!-- nav left side -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item borderRight active">
+                                <a class="nav-link" href="index.html">home</a>
+                            </li>
+                            <li class="nav-item borderRight">
+                                <a class="nav-link" href="favorites.html">favorites</a>
+                            </li>
+                            <li class="nav-item borderRight">
+                                <a class="nav-link" href="search.html">search</a>
+                            </li>
+                        </ul>
+
+                        <!-- nav right side -->
+                        <ul class="navbar-nav ml-auto nav-flex-icons">
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light">
+                                    <span id="favoriteCount">0</span>
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- HEADER - MAIN TITLE ROW -->
+            <div class="row">
+                <h1 class="title">Harvard Art Museums</h1>
+            </div>
+
+            <!-- SEARCH - SECOND TITLE ROW -->
+            <div class="row">
+                <h2 class="title">Search</h2>
+            </div>
+
+            <!-- SEARCH RADIO BUTTONS -->
+            <div class="row">
+                <div class="col-6 offset-3" style="border-radius: 5px">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons" style="width: 100%; border-radius: 5px;">
+                        <label class="btn btn-secondary active" style="color: black">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> gallery id
+                        </label>
+                        <label class="btn btn-secondary" style="color: black">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> title
+                        </label>
+                        <label class="btn btn-secondary" style="color: black">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> person
+                        </label>
+                        <label class="btn btn-secondary" style="color: black">
+                            <input type="radio" name="options" id="option4" autocomplete="off"> culture
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEARCH BUTTON -->
+            <div class="row" style="padding-top: 4vh">
+                <div class="col-6 offset-3">
+                    <input id='searchField' class="form-control" type="text" placeholder="search" style="width: 100%">
+                    <div style="padding-left: 40%; padding-right: 40%;">
+                        <button type="button" class="btn btn-primary" onclick="search()">search</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEARCH RESULTS -->
+            <div class="row" style="padding-top: 10vh">
+                <h2 class="title">Search Results</h2>
+            </div>
+            <div class="row">
+                <div class="col-8 offset-2" id="searchContainer">
+                    <table id="dtBasicExampleFour" class="table table-striped table-bordered table-sm">
+                        <thead>
+                            <tr>
+                                <th class="th-sm">title
+                                </th>
+                                <th class="th-sm">id
+                                </th>
+                                <th class="th-sm">image
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="search-table">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/libs/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/libs/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/libs/mdb.min.js"></script>
+
+<script type="text/javascript" src="js/libs/datatables.min.js"></script>
+<script type="text/javascript" src="js/libs/datatables-select.min.js"></script>
+
+<!-- own scripts -->
+<script src="js/helpers.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>
